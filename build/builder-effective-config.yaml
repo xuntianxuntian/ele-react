@@ -1,0 +1,15 @@
+directories:
+  output: build
+  buildResources: build
+appId: xuntian.com
+win:
+  target: nsis
+  icon: ./icon/cloud.ico
+files:
+  - filter:
+      - dist/**/*
+      - node_modules/
+      - package.json
+electronDownload:
+  mirror: 'https://npm.taobao.org/mirrors/electron/'
+electronVersion: 10.1.3
